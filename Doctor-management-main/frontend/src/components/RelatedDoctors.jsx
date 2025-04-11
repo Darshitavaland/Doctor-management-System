@@ -14,6 +14,8 @@ function RelatedDoctors({docId,speciality}) {
        if(doctors.length >0 && speciality){
         const doctorsData = doctors.filter((doc)=>doc.speciality===speciality && doc._id!=docId)
         setRelDoc(doctorsData)
+        console.log("heyyyy");
+        
        }
 
     },[doctors,speciality,docId])
